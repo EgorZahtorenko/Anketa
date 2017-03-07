@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>If</title>
+</head>
+<body>
+
+<script>
+    var a = prompt('Введите фамилию'),
+        b = prompt('Введите имя'),
+        c = prompt('Введите отчество'),
+        d = Number(prompt('Введите возраст')),
+        e = confirm('Ваш пол - мужской?');
+    var f;
+    var g;
+    if (e == true){
+        g = 'мужской';
+        if (d < 64){
+            f = 'нет';
+        }else{
+            f = 'да';
+        }
+    }else {
+        g = 'женский';
+        if (d < 55){
+            f = 'нет';
+        }else{
+            f = 'да';
+        }
+    }
+    alert('Ваше ФИО: ' + a + b + c + ' ваш возраст в годах: ' + d + ' ваш возраст в днях: ' + (d*365) + ' через 5 лет вам будет: ' + (d+5) + ' ваш пол: ' + g + ' вы на пенсии: ' + f);
+</script>
+</body>
+</html>
